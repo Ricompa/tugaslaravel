@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout.master');
 });
+
+Route::get('/content', function () {
+    return view('content');
+});
+
